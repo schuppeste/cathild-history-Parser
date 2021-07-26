@@ -6,10 +6,15 @@ Select only necessary columns to Parse, change Dates automatically to universal 
 
 need MCP,libreoffice(headless) commands on linux to rename courbes.xls to courbes_chamber_occurence and convert files to csv.
 
+
+
 Only two Comamnds in History Folder:
 
+mcp '/home/ewst/Schreibtisch/Historique/*/*/courbes.xls' '#1_#2_courbes.xls'
+
 and then:
+
 soffice --headless --convert-to csv *.xls
 
-Create courbes.txt:
+Create courbesall.csv:
 find ./ -name "*.csv" -exec ./test.exe {} \;
